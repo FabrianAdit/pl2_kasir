@@ -4,7 +4,7 @@ class HomePage extends StatelessWidget {
   final String username;
 
   // Constructor untuk menerima data username
-  const HomePage({Key? key, required this.username}) : super(key: key);
+  const HomePage({super.key, required this.username});
 
   @override
   Widget build(BuildContext context) {

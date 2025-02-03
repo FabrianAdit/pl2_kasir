@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({Key? key}) : super(key: key);
+  const LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -43,8 +43,8 @@ class LoginPage extends StatelessWidget {
                 ),
                 child: Column(
                   children: [
-                    TextField(
-                      decoration: const InputDecoration(
+                    const TextField(
+                      decoration: InputDecoration(
                         labelText: 'Email',
                         border: OutlineInputBorder(),
                         contentPadding: EdgeInsets.symmetric(
@@ -54,9 +54,9 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 16.0),
-                    TextField(
+                    const TextField(
                       obscureText: true,
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
                         labelText: 'Password',
                         border: OutlineInputBorder(),
                         contentPadding: EdgeInsets.symmetric(
